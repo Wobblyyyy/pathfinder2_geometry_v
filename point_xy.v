@@ -106,3 +106,11 @@ pub fn rotate(point PointXY, center PointXY, angle angle.Angle) PointXY {
 pub fn (point PointXY) rotate(center PointXY, angle angle.Angle) PointXY {
 	return rotate(point, center, angle)
 }
+
+pub fn is_near(a PointXY, b PointXY, max_distance f64) bool {
+	return distance(a, b) <= max_distance
+}
+
+pub fn (a PointXY) is_near(b PointXY, max_distance f64) bool {
+	return is_near(a, b, max_distance)
+}
