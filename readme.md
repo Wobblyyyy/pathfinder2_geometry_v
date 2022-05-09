@@ -6,4 +6,7 @@ Pathfinder2 code and this code, but, for the most part, this repository aims
 to replicate the functionality of `pathfinder2-geometry`.
 
 This is a shared library, meaning there's so executable here. To compile the
-library, type `v -shared -prod .` in this repo's root directory.
+library, type the following command in this repo's root directory.
+```bash
+v -shared -prod .
+```
